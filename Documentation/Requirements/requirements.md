@@ -79,15 +79,15 @@ Nosmarcal — приложение позволяющее производить
 
 Меню вычислений.
 
-![Меню вычислений](ссылка)
+![Меню вычислений]([ссылка](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/calculations_menu.png))
 
 Меню построения графиков
 
-![Меню_графиков](ссылка)
+![Меню_графиков]([ссылка](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/graph_menu.png))
 
 Таблица переменных и констант
 
-![Таблица переменных и констант](ссылка)
+![Таблица переменных и констант]([ссылка](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/table_menu.png))
 
 <a name ="user_specifications"/>
 
