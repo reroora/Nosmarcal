@@ -82,7 +82,7 @@ Nosmarcal — приложение позволяющее производить
 
 Меню построения графиков
 
-![graph_menu]((https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/graph_menu.png)
+![graph_menu](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/graph_menu.png)
 
 Таблица переменных и констант
 
