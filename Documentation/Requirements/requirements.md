@@ -76,18 +76,17 @@ Nosmarcal — приложение позволяющее производить
 
 ## 2.2 Интерфейс пользователя
 
-
 Меню вычислений.
 
-![Меню вычислений]([ссылка](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/calculations_menu.png))
+![calculations_menu]([ссылка](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/calculations_menu.png))
 
 Меню построения графиков
 
-![Меню_графиков]([ссылка](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/graph_menu.png))
+![graph_menu]([ссылка](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/graph_menu.png))
 
 Таблица переменных и констант
 
-![Таблица переменных и констант]([ссылка](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/table_menu.png))
+![table_menu]([ссылка](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/table_menu.png))
 
 <a name ="user_specifications"/>
 
