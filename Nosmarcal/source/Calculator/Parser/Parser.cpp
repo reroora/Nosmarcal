@@ -31,7 +31,7 @@ Expression_ptr Parser::expression()
     return application();
 }
 
-Expression_ptr Parser::application() // todo: do it
+Expression_ptr Parser::application()
 {
     auto left = term();
 
@@ -150,13 +150,13 @@ Expression_ptr Parser::primary()
     }
     else if(match(Token::Type::Eol)) {}
 
-    throw Error("Unexpected token error"); // todo: do normal exceptions
+    throw Error("Unexpected token error");
 }
 
 void Parser::require(Token::Type type)
 {
     if(!match(type)){
-        throw Error("Unexpected token error"); //todo: do normal exceptions
+        throw Error("Unexpected token error");
     }
 }
 

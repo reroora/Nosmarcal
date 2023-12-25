@@ -22,7 +22,7 @@ std::string Calculator::calculate(const std::string& target)
         Evaluator evaluator;
         evaluator.evaluate(std::move(expressions));
     }
-    catch (Error &e) // todo: make normal errors
+    catch (Error &e)
     {
         std::cout << "oops, error - " << e.msg << std::endl;
     }

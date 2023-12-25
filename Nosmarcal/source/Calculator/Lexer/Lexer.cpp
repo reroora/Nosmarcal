@@ -90,7 +90,7 @@ std::vector<Token>&& Lexer::tokenize(const std::string &target)
                 }
                 else
                 {
-                    throw Error("Lexer exception"); // todo: create exceptions
+                    throw Error("Lexer exception");
                 }
 
 
