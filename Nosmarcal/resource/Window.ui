@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" Name="Dialog">
+  <property Name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>632</width>
+    <height>504</height>
+   </rect>
+  </property>
+  <property Name="windowTitle">
+   <string>Nosmarcal</string>
+  </property>
+  <widget class="QPlainTextEdit" Name="tmpWidget">
+   <property Name="geometry">
+    <rect>
+     <x>210</x>
+     <y>20</y>
+     <width>411</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property Name="plainText">
+    <string>yvi
+</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" Name="outputTextEdit">
+   <property Name="geometry">
+    <rect>
+     <x>210</x>
+     <y>420</y>
+     <width>411</width>
+     <height>71</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" Name="inputLineEdit">
+   <property Name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>181</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property Name="text">
+    <string/>
+   </property>
+   <property Name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property Name="placeholderText">
+    <string>Enter your code here</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
