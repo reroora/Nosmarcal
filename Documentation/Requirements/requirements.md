@@ -1,4 +1,3 @@
-Алёша Кутняк, [10/24/2023 2:16 PM]
 # Требования к проекту
 ---
 
@@ -24,11 +23,11 @@
 3.2.1 [Внешние интерфейсы](#external_interfaces)  
 3.2.2 [Ограничения](#restrictions)
 
-<a name="introduction"/>
+<a Name="introduction"/>
 
 # 1 Введение
 
-<a name="appointment"/>
+<a Name="appointment"/>
 
 ## 1.1 Назначение
 
@@ -36,7 +35,7 @@
 
 Документ предназначен для команд, выполняющих разработку и тестирование продукта.
 
-<a name="target_audience"/>
+<a Name="target_audience"/>
 
 ## 1.2 Целевая аудитория
 
@@ -46,13 +45,13 @@
 
 Команда тестировщиков должна использовать данный документ для проверки соответствия функционирования продукта задокументированному.
 
-<a name="overview"/>
+<a Name="overview"/>
 
 ## 1.3 Обзор
 
 Nosmarcal — приложение позволяющее производить математические вычисления и отрисовывать графики функций. В приложении присутствует поддержка пользовательских констант, переменных и функций.
 
-<a name ="analogues"/>
+<a Name ="analogues"/>
 
 ## 1.4 Аналоги
 
@@ -62,37 +61,37 @@ Nosmarcal — приложение позволяющее производить
 
 Преимуществом аналогов является более широкий функционал и поддержка.
 
-<a name ="user_requirements"/>
+<a Name ="user_requirements"/>
 
 # 2 Требования пользователя
 
-<a name ="software_interfaces"/>
+<a Name ="software_interfaces"/>
 
 ## 2.1 Программные интерфейсы
 
 Продукт базируется на кроссплатформенном фреймворке Qt6 и языке С++.
 
-<a name ="user_interface"/>
+<a Name ="user_interface"/>
 
 ## 2.2 Интерфейс пользователя
 
 Меню вычислений.
 
-![calculations_menu](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/calculations_menu.png)
+![calculations_menu](/Mockups/calculations_menu.png)
 
 Меню построения графиков
 
-![graph_menu](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/graph_menu.png)
+![graph_menu](Mockups/graph_menu.png)
 
 Таблица переменных и констант
 
-![table_menu](https://github.com/reroora/Nosmarcal/blob/master/Documentation/Requirements/Mockups/table_menu.png)
+![table_menu](/Mockups/table_menu.png)
 
-<a name ="user_specifications"/>
+<a Name ="user_specifications"/>
 
 ## 2.3 Характеристики пользователей
 
-<a name ="user_classes"/>
+<a Name ="user_classes"/>
 
 ## 2.3.1 Классы пользователей
 
@@ -100,31 +99,31 @@ Nosmarcal — приложение позволяющее производить
 |:---|:---|
 | Пользователь | Пользователи, которые будут произвадить вычисления и строить графики функций |
 
-<a name ="product_audience"/>
+<a Name ="product_audience"/>
 
 ## 2.3.2 Аудитория продукта
 
-<a name ="target_audience"/>
+<a Name ="target_audience"/>
 
 ### 2.3.2.1 Целевая аудитория
 
 Люди, которым необходимо производить математические вычисления, а также отрисовывать графики функций.
 
-<a name ="collateral_audience"/>
+<a Name ="collateral_audience"/>
 
 ### 2.3.2.2 Побочная целевая аудитория
 
 Люди.
 
-<a name ="system_requirements"/>
+<a Name ="system_requirements"/>
 
 # 3 Системные требования
 
-<a name ="functional_requirements"/>
+<a Name ="functional_requirements"/>
 
 ## 3.1 Функциональные требования
 
-<a name ="main_functions"/>
+<a Name ="main_functions"/>
 
 ### 3.1.1 Основные функции
 
@@ -135,17 +134,17 @@ Nosmarcal — приложение позволяющее производить
 | Отрисовка графиков функций | Продукт должен предоставлять возможность отрисовки графиков функций |
 | Выход | Продукт должен предоставлять возможность выхода из иприложения | 
 
-<a name ="restrictions_and_exclusions"/>
+<a Name ="restrictions_and_exclusions"/>
 
 ### 3.1.2 Ограничения и исключения
 
 Отсутcтвуют.
 
-<a name ="non-functional_requirements"/>
+<a Name ="non-functional_requirements"/>
 
 ## 3.2 Нефункциональные требования
 
-<a name="external_interfaces"/>
+<a Name="external_interfaces"/>
 
 ### 3.2.1 Внешние интерфейсы
 
@@ -153,7 +152,7 @@ Nosmarcal — приложение позволяющее производить
 * размер шрифта не должен быть слишком маленьким;
 * интерфейс управления должен быть совместим со всеми целевыми платформами.
 
-<a name="restrictions"/>
+<a Name="restrictions"/>
 
 ### 3.2.2 Ограничения
 

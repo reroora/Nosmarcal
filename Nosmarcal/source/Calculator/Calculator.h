@@ -6,9 +6,17 @@
 #define NOSMARCAL_CALCULATOR_H
 
 
+#include <string>
+#include "Lexer/Lexer.h"
+
 class Calculator
 {
+public:
+    void calculate(const std::string& target);
 
+private:
+//    Lexer lexer;
+//    std::vector<Token> tokens;
 };
 
 
