@@ -77,7 +77,7 @@ Nosmarcal — приложение позволяющее производить
 
 Меню вычислений.
 
-![calculations_menu](/Mockups/calculations_menu.png)
+![calculations_menu](Mockups/calculations_menu.png)
 
 Меню построения графиков
 
@@ -85,7 +85,7 @@ Nosmarcal — приложение позволяющее производить
 
 Таблица переменных и констант
 
-![table_menu](/Mockups/table_menu.png)
+![table_menu](Mockups/table_menu.png)
 
 <a Name ="user_specifications"/>
 
