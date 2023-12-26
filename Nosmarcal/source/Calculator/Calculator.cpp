@@ -8,10 +8,8 @@
 #include "Evaluator/Evaluator.h"
 #include "Error/Error.h"
 
-std::string Calculator::calculate(const std::string& target)
+void Calculator::calculate(const std::string& target)
 {
-    std::string response;
-
     Lexer lexer;
     Parser parser;
 
@@ -20,12 +18,10 @@ std::string Calculator::calculate(const std::string& target)
         auto tokens = lexer.tokenize(target);
         std::vector<Expression_ptr> expressions = parser.parse(std::move(tokens));
         Evaluator evaluator;
-        evaluator.evaluate(std::move(expressions));
+        evaluator.evaluate(expressions);
     }
     catch (Error &e)
     {
         std::cout << "oops, error - " << e.msg << std::endl;
     }
-
-    return response;
 }

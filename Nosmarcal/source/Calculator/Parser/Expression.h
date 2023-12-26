@@ -91,7 +91,8 @@ public:
     Application(std::string name, std::vector<Expression_ptr> args);
 
     [[nodiscard]] const std::string &getName() const;
-    [[nodiscard]] std::vector<Expression_ptr>&& moveArgs();
+
+    const std::vector<Expression_ptr> &getArgs() const;
 
 private:
     std::string name;

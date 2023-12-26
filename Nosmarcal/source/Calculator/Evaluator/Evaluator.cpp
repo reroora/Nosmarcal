@@ -7,24 +7,19 @@
 #include "Error/Error.h"
 
 #include <cmath>
+#include <iostream>
 
-double Evaluator::evaluate(std::vector<Expression_ptr> &&expressions)
+double Evaluator::evaluate(const std::vector<Expression_ptr> &expressions)
 {
-//    for (auto& e: expressions)
-//    {
-//        evaluate(*e);
-//    }
-
-    for (int i = 0; i < expressions.size(); ++i)
+    for (const auto & expression : expressions)
     {
-        evaluate(*expressions[i]);
+        evaluate(*expression);
     }
-
 
     return 0;
 }
 
-double Evaluator::evaluate( Expression expression)
+double Evaluator::evaluate(const Expression &expression)
 {
     auto type = expression.getType();
     switch (type)
@@ -49,7 +44,7 @@ double Evaluator::evaluate( Expression expression)
     }
 }
 
-double Evaluator::evaluate( Unary &unary)
+double Evaluator::evaluate(const Unary &unary)
 {
     double val = evaluate(*unary.getExpression());
     switch (unary.getOperation())
@@ -62,7 +57,7 @@ double Evaluator::evaluate( Unary &unary)
     }
 }
 
-double Evaluator::evaluate( Binary &binary)
+double Evaluator::evaluate(const Binary &binary)
 {
     //std::string Name = evaluate(*binary.getLeftOperand())
     double left = evaluate(*binary.getLeftOperand());
@@ -87,34 +82,35 @@ double Evaluator::evaluate( Binary &binary)
     }
 }
 
-double Evaluator::evaluate( Numeric &numeric)
+double Evaluator::evaluate(const Numeric &numeric)
 {
     auto v = numeric.getValue();
     return v;
 }
 
-double Evaluator::evaluate( Ident &ident)
+double Evaluator::evaluate(const Ident &ident)
 {
     return context[ident.getName()];
 }
 
-double Evaluator::evaluate(Application& application)
+double Evaluator::evaluate(const Application& application)
 {
     const auto& name = application.getName();
-    auto args = application.moveArgs();
+    const auto& args = application.getArgs();
 
-    if (name == "Print")
+    if (name == "print")
     {
         if (args.size() == 1)
         {
             double result = evaluate(*args[0]);
+            std::cout << "res = " << result << std::endl;
 
-            std::ostringstream strs;
+            /*std::ostringstream strs;
             strs << result;
-            std::string str = strs.str();
+            std::string str = strs.str();*/
 
             Native native;
-            native.execute(Native::Function::Print, str);
+            native.execute(Native::Function::Print, std::to_string(result));
 
             return 0;
         }
@@ -128,7 +124,7 @@ double Evaluator::evaluate(Application& application)
     }
 }
 
-double Evaluator::evaluate( Assign &assign)
+double Evaluator::evaluate(const Assign &assign)
 {
     std::string name = assign.getIdent();
     double value = evaluate(*assign.getExpr());

@@ -10,17 +10,24 @@
 #include <QLineEdit>
 #include <QPlainTextEdit>
 #include <QPushButton>
+#include <QLabel>
+#include <QVBoxLayout>
 
 class Window : public QWidget
 {
 Q_OBJECT
 public:
-    explicit Window(QWidget *parent = 0);
+    explicit Window(QWidget *parent = nullptr);
 
 private:
     QPlainTextEdit* inputBar;
-    QPlainTextEdit* textOutput;
+    //QPlainTextEdit* textOutput;
+    QTextEdit* textOutput;
+//    QLabel* textOutput;
     QPushButton* evaluateButton;
+
+    QVBoxLayout* verticalLayout;
+    QHBoxLayout* horizontalLayout;
 
 signals:
     void printSignal(std::string content);

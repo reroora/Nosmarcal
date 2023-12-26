@@ -12,7 +12,7 @@
 class Calculator
 {
 public:
-    std::string calculate(const std::string& target);
+    void calculate(const std::string& target);
 
 private:
 //    Lexer lexer;

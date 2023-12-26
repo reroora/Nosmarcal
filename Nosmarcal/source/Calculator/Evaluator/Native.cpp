@@ -5,9 +5,11 @@
 #include "Native.h"
 
 #include <utility>
+#include <iostream>
 
 void Native::nativePrint(std::string text)
 {
+    std::cout << "emit" << std::endl;
     emit printSignal(std::move(text));
 }
 

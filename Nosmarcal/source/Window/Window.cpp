@@ -8,9 +8,9 @@
 #include "Calculator.h"
 
 #include <QLineEdit>
-#include <QVBoxLayout>
 
 #include <QTextStream>
+#include <iostream>
 
 
 Window::Window(QWidget *parent) : QWidget(parent)
@@ -21,10 +21,10 @@ Window::Window(QWidget *parent) : QWidget(parent)
     evaluateButton = new QPushButton;
     evaluateButton->setText("Evaluate");
 
-    textOutput = new QPlainTextEdit;
-
-    auto *verticalLayout = new QVBoxLayout;
-    auto *horizontalLayout = new QHBoxLayout;
+    textOutput = new QTextEdit;
+//    textOutput = new QLabel;
+    this->verticalLayout = new QVBoxLayout;
+    this->horizontalLayout = new QHBoxLayout;
 
     verticalLayout->addWidget(inputBar);
     verticalLayout->addWidget(evaluateButton);
@@ -41,15 +41,15 @@ Window::Window(QWidget *parent) : QWidget(parent)
 
 void Window::evaluateButtonClickedHandler()
 {
-    //textOutput->appendPlainText(inputBar->toPlainText());
     Calculator calculator;
     std::string target = inputBar->toPlainText().toStdString() + '\0';
     calculator.calculate(target);
-    //textOutput->appendPlainText("qstr");
 }
 
 void Window::printSignalHandler(const std::string& content)
 {
+    std::cout << "result = " << content << std::endl;
     QString qstr = QString::fromUtf8(content.c_str());
-    textOutput->appendPlainText(qstr);
+    textOutput->append(qstr);
+    textOutput->repaint();
 }

@@ -83,9 +83,9 @@ const std::string &Application::getName() const
     return name;
 }
 
-std::vector<Expression_ptr>&& Application::moveArgs()
+const std::vector<Expression_ptr> &Application::getArgs() const
 {
-    return std::move(args);
+    return args;
 }
 
 const std::string &Assign::getIdent() const
